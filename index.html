@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+    
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <i class="fa-brands fa-instagram"></i> Instagram
+            </span>
+
+            <div>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-success focus-ring focus-ring-success me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Create a new post
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="mb-2">
+                                    <label for="exampleFormControlTextarea1" class="form-label fw-medium">Caption:</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-light border mt-1 me-1 mb-3"><i class="fa-solid fa-camera"></i></button>
+                                <button type="button" class="btn btn-light border mt-1 me-1 mb-3"><i class="fa-solid fa-location-dot"></i></button>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Options -->
+                <button type="button" class="btn btn-secondary dropdown-toggle focus-ring focus-ring-secondary" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                    <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="scroll-tab" data-bs-toggle="tab" data-bs-target="#scroll" type="button" role="tab" aria-controls="scroll" aria-selected="false"><i class="fa-solid fa-square"></i></button>
+        </li>
+    </ul>
+    
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- Scroll view -->
+        <div class="tab-pane" id="scroll" role="tabpanel" aria-labelledby="scroll-tab" tabindex="0">
+            <div class="d-flex flex-column align-items-center">
+                <div class="card my-3 w-50">
+                    <div class="d-flex justify-content-between px-3 py-1">
+                        <h5 class="card-title">My crazy dog Spark!</h5>
+                        <p class="card-text">08/26</p>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/11/0e/54/110e543b1339b85d2ca6e195d1496909.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>204 Likes</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card my-3 w-50">
+                    <div class="d-flex justify-content-between px-3 py-1">
+                        <h5 class="card-title">My crazy dog Spark!</h5>
+                        <p class="card-text">08/26</p>
+                    </div>
+                    <img src="https://i.pinimg.com/originals/11/0e/54/110e543b1339b85d2ca6e195d1496909.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>204 Likes</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+
+                <div class="card my-3 w-50">
+                    <div class="d-flex justify-content-between px-3 py-1">
+                        <h5 class="card-title">My crazy dog Spark!</h5>
+                        <p class="card-text">08/26</p>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h6>204 Likes</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid view -->
+        <div class="tab-pane active" id="grid" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+            <div class="d-flex justify-content-center">
+                <section class="row m-5 shadow">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="col-4 p-3" alt="girl-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Placeholder_male_superhero_c.png?20110305190052" class="col-4 p-3" alt="boy-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="col-4 p-3" alt="girl-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Placeholder_male_superhero_c.png?20110305190052" class="col-4 p-3" alt="boy-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="col-4 p-3" alt="girl-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Placeholder_male_superhero_c.png?20110305190052" class="col-4 p-3" alt="boy-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="col-4 p-3" alt="girl-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Placeholder_male_superhero_c.png?20110305190052" class="col-4 p-3" alt="boy-placeholder">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Placeholder_female_superhero_c.png?20110305190235" class="col-4 p-3" alt="girl-placeholder">
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
+  </body>
+</html>
